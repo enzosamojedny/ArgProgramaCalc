@@ -1,0 +1,140 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+.calc-container{
+display: grid;
+grid-template-columns: repeat(5,1fr);
+grid-template-rows: repeat(5,1fr);
+gap: 5px;
+text-align: center;
+}
+.calc-input{
+grid-column-start: 3;
+grid-column-end: 7;
+grid-row-start: 1;
+}
+.button-1{
+grid-column-start: 3;
+grid-row-start: 2;
+}
+.button-2{
+    grid-column-start: 4;
+    grid-row-start: 2;
+}
+.button-3{
+    grid-column-start: 5;
+    grid-row-start: 2;
+}
+.button-4{
+    grid-column-start: 3;
+    grid-row-start: 3;
+}
+.button-5{
+    grid-column-start: 4;
+    grid-row-start: 3;
+}
+.button-6{
+    grid-column-start: 5;
+    grid-row-start: 3;
+}
+.button-7{
+    grid-column-start: 3;
+    grid-row-start: 4;
+}
+.button-8{
+    grid-column-start: 4;
+    grid-row-start: 4;
+}
+.button-9{
+    grid-column-start: 5;
+    grid-row-start: 4;
+}
+.button-10{
+    grid-column-start: 4;
+    grid-row-start: 5;
+}
+.button-11{
+    grid-column-start: 3;
+    grid-row-start: 5;
+}
+.button-12{
+    grid-column-start: 6;
+    grid-row-start: 2;
+}
+.button-13{
+    grid-column-start: 6;
+    grid-row-start: 3;
+}
+.button-14{
+    grid-column-start: 6;
+    grid-row-start: 4;
+}
+.button-15{
+    grid-column-start: 6;
+    grid-row-start: 5;
+}
+.button-16{
+    grid-column-start: 5;
+    grid-row-start: 5;
+}
+.button-1,
+.button-2,
+.button-3,
+.button-4,
+.button-5,
+.button-6,
+.button-7,
+.button-8,
+.button-9,
+.button-10,
+.button-11,
+.button-12,
+.button-13,
+.button-14,
+.button-15,
+.button-16 {
+  border: 1px solid transparent;
+  transition: box-shadow 0.3s, background-color 0.3s;
+}
+
+.button-1:hover,
+.button-2:hover,
+.button-3:hover,
+.button-4:hover,
+.button-5:hover,
+.button-6:hover,
+.button-7:hover,
+.button-8:hover,
+.button-9:hover,
+.button-10:hover,
+.button-11:hover,
+.button-12:hover,
+.button-13:hover,
+.button-14:hover,
+.button-15:hover,
+.button-16:hover {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  background-color: #333;
+}
+.button-1:active,
+.button-2:active,
+.button-3:active,
+.button-4:active,
+.button-5:active,
+.button-6:active,
+.button-7:active,
+.button-8:active,
+.button-9:active,
+.button-10:active,
+.button-11:active,
+.button-12:active,
+.button-13:active,
+.button-14:active,
+.button-15:active,
+.button-16:active {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  background-color: rgb(36, 37, 36);
+  transition: box-shadow 0.3s, background-color 0.3s;
+}

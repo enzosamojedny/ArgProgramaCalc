@@ -1,8 +1,9 @@
-# React + Vite
+EJERCICIO 1:
+Se encuentra en Solution1.js
+Como ejecutar --> node Solution1.js ( dentro de folder src/components)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+EJERCICIO2:
+Se visualiza ejecutando npm run dev
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Esta es una calculadora simple usando react(vite) y la funcion eval() para manejar las operaciones de calculo
+eval() toma un string como arg y ejecuta codigo js

@@ -7,7 +7,9 @@ function Calc() {
         setInput(input + value)
     }
     const handleInputChange = (event) => {
-        const modifiedValue = event.target.value.replace(/[^0-9*%+\-=÷]/g, '')
+        let modifiedValue = event.target.value;
+        modifiedValue = modifiedValue.replace(/[^0-9*+\-=/()%]/g, '');
+        modifiedValue = modifiedValue.replace(/%/g, '/100');
         setInput(modifiedValue)
     }
     const handleCalculate = () => {
@@ -36,7 +38,7 @@ function Calc() {
                 <button className="button-11" onClick={() => handleButtonClick('%')}>%</button>
                 <button className="button-12" onClick={() => handleButtonClick('+')}>+</button>
                 <button className="button-13" onClick={() => handleButtonClick('-')}>-</button>
-                <button className="button-14" onClick={() => handleButtonClick('÷')}>÷</button>
+                <button className="button-14" onClick={() => handleButtonClick('/')}>/</button>
                 <button className="button-15" onClick={() => handleButtonClick('*')}>*</button>
                 <button className="button-16" onClick={handleCalculate}>=</button>
             </div>
